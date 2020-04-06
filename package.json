@@ -1,0 +1,34 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lhscar56/weather-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lhscar56/weather-app/issues"
+  },
+  "homepage": "https://github.com/lhscar56/weather-app#readme",
+  "dependencies": {
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^4.0.3",
+    "lodash": "^4.17.15",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "file-loader": "^6.0.0"
+  }
+}
