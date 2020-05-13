@@ -1,33 +1,30 @@
 {
   "name": "weather-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "css-loader": "^3.5.2",
-    "file-loader": "^6.0.0",
-    "lodash": "^4.17.15",
-    "style-loader": "^1.1.3",
-    "webpack-dev-server": "^3.10.3"
-  },
-  "devDependencies": {
-    "html-loader": "^1.1.0",
-    "html-webpack-plugin": "^4.2.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
-  },
+  "main": "webpack.config.js",
   "scripts": {
     "build": "webpack --mode production",
-    
+    "builddev": "webpack --mode development"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gagc056/weather-app.git"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Gaston Costa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gagc056/weather-app/issues"
   },
-  "homepage": "https://github.com/gagc056/weather-app#readme"
+  "homepage": "https://github.com/gagc056/weather-app#readme",
+  "description": "It is a weather app from the odins project",
+  "dependencies": {
+    "expresss": "0.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
 }
