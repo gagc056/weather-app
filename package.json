@@ -17,12 +17,13 @@
     "url": "https://github.com/gagc056/weather-app/issues"
   },
   "homepage": "https://github.com/gagc056/weather-app#readme",
-  "description": "It is a weather app from the odins project",
+  "description": "It is a weather app from the odin´s project",
   "dependencies": {
-    "expresss": "0.0.0"
+    "express": "0.0.0"
   },
   "devDependencies": {
     "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
