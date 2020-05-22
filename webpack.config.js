@@ -1,10 +1,23 @@
+// eslint-disable-next-line no-unused-vars
 const path = require('path');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'index.js',
-    path: path.join(__dirname, 'dist'),
+  mode: 'development',
+  watch: true,
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+    }),
+  ],
+  devServer:{
+    port:4000
   },
-
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  },
 };

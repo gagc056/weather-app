@@ -1,7 +1,6 @@
-export class Store {
+export default class Store {
   constructor() {
     this.city;
-    this.Code;
     this.defaultCity = 'Montevideo';
     this.defaultCountry = 'Uruguay';
   }
@@ -12,14 +11,8 @@ export class Store {
     } else {
       this.city = localStorage.getItem('city');
     }
-    if (localStorage.getItem('Code') === null) {
-      this.Code = this.defaultCountry;
-    } else {
-      this.Code = localStorage.getItem('Code');
-    }
     return {
       city: this.city,
-      Code: this.Code
     }
   }
 

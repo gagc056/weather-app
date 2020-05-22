@@ -1,31 +1,34 @@
 {
   "name": "weather-app",
   "version": "1.0.0",
-  "main": "webpack.config.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "builddev": "webpack --mode development"
+    "dev": "webpack-dev-server --mode=development",
+    "start": "webpack-dev-server --mode development --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gagc056/weather-app.git"
   },
   "keywords": [],
-  "author": "Gaston Costa",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gagc056/weather-app/issues"
   },
   "homepage": "https://github.com/gagc056/weather-app#readme",
-  "description": "It is a weather app from the odin´s project",
-  "dependencies": {
-    "express": "0.0.0"
-  },
   "devDependencies": {
-    "css-loader": "^3.5.3",
     "eslint": "^7.0.0",
-    "style-loader": "^1.2.1",
+    "eslint-plugin-react": "^7.20.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "css-loader": "^3.5.3",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1"
   }
 }

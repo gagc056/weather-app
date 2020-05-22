@@ -1,28 +1,25 @@
-import _ from 'lodash';
-import './main.css';
-const { Store } = require('./Store');
-const { Weather } = require('./Weather');
-const { UI } = require('./UI');
+const {Store} = require ('./Store');
+const {Weather} = require ('./Weather');
+const {UI} = require ('./UI');
 
 const storage = new Store();
-const {city, countryCode}= storage.getLocationData();
-const weather = new Weather(city, countryCode);
-
+const {city}= storage.getLocationData();
+const weather = new Weather(city);
 
 const ui = new UI();
 
 require('./main.css');
+
 
 async function fetchWeather() {
   const data = await weather.getWeather()
   ui.render(data);
 }
 
-document.getElementById('w-change-btn').addEventListener('click', (e) => {
+document.getElementById('change-city-btn').addEventListener('click', () => {
   const city = document.getElementById('city').value;
-  const countryCode = document.getElementById('Code').value
-  weather.changeLocation(city, Code);
-  storage.setLocationData(city, Code);
+  weather.changeLocation(city);
+  storage.setLocationData(city);
   fetchWeather();
 
 });
