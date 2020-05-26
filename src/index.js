@@ -1,15 +1,14 @@
-const {Store} = require ('./Store');
-const {Weather} = require ('./Weather');
-const {UI} = require ('./UI');
-
+import Store from './Store';
+import Weather from './Weather';
+import UI from './UI';
+import './main.css';
+console.log(Store)
 const storage = new Store();
-const {city}= storage.getLocationData();
+const city=storage.getLocationData();
 const weather = new Weather(city);
 
+
 const ui = new UI();
-
-require('./main.css');
-
 
 async function fetchWeather() {
   const data = await weather.getWeather()
@@ -20,7 +19,7 @@ document.getElementById('change-city-btn').addEventListener('click', () => {
   const city = document.getElementById('city').value;
   weather.changeLocation(city);
   storage.setLocationData(city);
-  fetchWeather();
+  fetchWeather(city);
 
 });
 

@@ -2,7 +2,6 @@ export default class Store {
   constructor() {
     this.city;
     this.defaultCity = 'Montevideo';
-    this.defaultCountry = 'Uruguay';
   }
 
   getLocationData() {
@@ -11,14 +10,11 @@ export default class Store {
     } else {
       this.city = localStorage.getItem('city');
     }
-    return {
-      city: this.city,
-    }
+    return this.city;
   }
 
-  setLocationData(city, Code) {
+  setLocationData(city) {
     localStorage.setItem('city', city);
-    localStorage.setItem('Code', Code);
   }
 
 }
