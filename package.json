@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gagc056/weather-app#readme",
   "devDependencies": {
+    "babel-install": "2.1.0",
     "eslint": "^7.1.0",
     "eslint-plugin-react": "^7.20.0",
     "webpack": "^4.43.0",
