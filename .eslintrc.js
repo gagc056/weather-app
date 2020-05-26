@@ -13,7 +13,6 @@ module.exports = {
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
         },
