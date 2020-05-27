@@ -2,16 +2,16 @@ import Store from './Store';
 import Weather from './Weather';
 import UI from './UI';
 import './main.css';
-console.log(Store)
+
 const storage = new Store();
-const city=storage.getLocationData();
+const city = storage.getLocationData();
 const weather = new Weather(city);
 
 
 const ui = new UI();
 
 async function fetchWeather() {
-  const data = await weather.getWeather()
+  const data = await weather.getWeather();
   ui.render(data);
 }
 
@@ -20,7 +20,6 @@ document.getElementById('change-city-btn').addEventListener('click', () => {
   weather.changeLocation(city);
   storage.setLocationData(city);
   fetchWeather(city);
-
 });
 
 document.addEventListener('DOMContentLoaded', fetchWeather);

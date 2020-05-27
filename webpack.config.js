@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   watch: true,
@@ -10,15 +11,15 @@ module.exports = {
       template: 'src/index.html',
     }),
   ],
-  devServer:{
-    port:4000
+  devServer: {
+    port: 4000,
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 };

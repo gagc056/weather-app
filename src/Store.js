@@ -1,6 +1,6 @@
 export default class Store {
   constructor() {
-    this.city;
+    this.city = null;
     this.defaultCity = 'Montevideo';
   }
 
@@ -14,7 +14,7 @@ export default class Store {
   }
 
   setLocationData(city) {
+    this.city = city;
     localStorage.setItem('city', city);
   }
-
 }

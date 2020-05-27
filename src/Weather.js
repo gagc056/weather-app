@@ -1,5 +1,4 @@
 export default class Weather {
-
   constructor(city) {
     this.apiKey = '71b7b9bac33a91c886ef4beb1850df5c';
     this.city = city;
@@ -15,5 +14,4 @@ export default class Weather {
   changeLocation(city) {
     this.city = city;
   }
-
 }
