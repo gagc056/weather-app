@@ -6,8 +6,6 @@ import './main.css';
 const storage = new Store();
 const city = storage.getLocationData();
 const weather = new Weather(city);
-
-
 const ui = new UI();
 
 async function fetchWeather() {
