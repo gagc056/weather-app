@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack -p --progress",
+    "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/gagc056/weather-app#readme",
   "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
     "babel-install": "2.1.0",
     "eslint": "^7.1.0",
     "eslint-plugin-react": "^7.20.0",
