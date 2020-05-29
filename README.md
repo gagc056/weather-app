@@ -1,4 +1,6 @@
 # weather-app
+In this project I  create an app able to search for a specific location and toggle displaying the data in Fahrenheit or Celsius.
+[](./images/screenshot.png)
 
 This are some of the instructions that on setting up your project locally. To get a local copy up and run this:
 
