@@ -19,7 +19,7 @@ Get a free API Key at https://openweathermap.org/
 
 Clone the repo
 
-git clone https:://github.com/SantiagoGuerra/weather-app.git
+git clone https://github.com/gagc056/weather-app
 
 Install NPM packages
 
@@ -31,6 +31,7 @@ const API_KEY = 'ENTER YOUR API';
 run npm run start
 
 stack used:
+
 -HTML
 
 -CSS
