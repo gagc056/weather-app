@@ -19,5 +19,4 @@ document.getElementById('change-city-btn').addEventListener('click', () => {
   storage.setLocationData(city);
   fetchWeather(city);
 });
-
 document.addEventListener('DOMContentLoaded', fetchWeather);
