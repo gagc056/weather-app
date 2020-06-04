@@ -3,7 +3,9 @@ In this project I  create an app able to search for the weather in specific loca
 
 <img src= "images/screenshot.png">
 
+##Live version:
 
+[Live Demo](https://github.com/gagc056/weather-app)
 
 This are some of the instructions that on setting up your project locally. To get a local copy up and run this:
 
@@ -39,3 +41,18 @@ stack used:
 -npm
 
 -javascript
+
+
+
+##Authors
+-Github: https://github.com/gagc056
+
+- Linkedin:https://www.linkedin.com/in/gastoncosta/
+
+🤝 Contributing
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the issues page.
+
+Show your support
+Give a ⭐️ if you like this project!

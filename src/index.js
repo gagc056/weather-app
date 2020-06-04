@@ -8,6 +8,7 @@ const city = storage.getLocationData();
 const weather = new Weather(city);
 const ui = new UI();
 
+
 async function fetchWeather() {
   const data = await weather.getWeather();
   ui.render(data);

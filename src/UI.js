@@ -15,7 +15,7 @@ export default class UI {
       this.location.textContent = `${weather.name}  `;
       this.icon.setAttribute('src', `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png `);
       this.description.textContent = weather.weather[0].description;
-      this.string.textContent = `${weather.main.temp}°C| ${weather.main.temp * 1.8 + 32}F`;
+      this.string.textContent = `${weather.main.temp}°C`;
       this.wind.textContent = `Wind:${weather.wind.speed}m/s`;
       this.humidity.textContent = `Humidity: ${weather.main.humidity} °C`;
     }
