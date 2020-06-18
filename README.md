@@ -1,7 +1,7 @@
 # weather-app
 In this project I  create an app able to search for the weather in specific location and toggle displaying the data in Fahrenheit or Celsius.
 
-<img src= "images/screenshot.png">
+<img src= "images/capture.png">
 
 ##Live version:
 
